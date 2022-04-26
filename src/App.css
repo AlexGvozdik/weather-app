@@ -1,0 +1,19 @@
+@media screen and (max-width: 767px) {
+  .grid {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    display: flex;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .item {
+    display: block;
+    flex-basis: calc((100% -2 * 30px) / 2);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}

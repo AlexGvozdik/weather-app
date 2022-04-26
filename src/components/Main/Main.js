@@ -32,10 +32,9 @@ export default function Main() {
     countries?.forEach((country) => {
       axios
         .get(
-          `/weather?q=${country}&appid=d0aef4da9ac1a34e09e4ce9ff137ae24&units=imperial`
+          `/weather?q=${country}&appid=${process.env.REACT_APP_API_KEY}&units=imperial`
         )
         .then(({ data }) => {
-          console.log(data);
           setCities((pr) => {
             if (pr && pr?.find((c) => c.name === country)) {
               return pr;
@@ -48,7 +47,7 @@ export default function Main() {
 
   async function updateCity({ lat, lon, name }) {
     const { data } = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=d0aef4da9ac1a34e09e4ce9ff137ae24&units=imperial`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_API_KEY}&units=imperial`
     );
 
     setCities((prev) => {

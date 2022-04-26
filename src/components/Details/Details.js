@@ -11,11 +11,10 @@ export default function Details() {
   useEffect(() => {
     axios
       .get(
-        `https://api.openweathermap.org/data/2.5/forecast?lat=${state.lat}&lon=${state.lon}&appid=d0aef4da9ac1a34e09e4ce9ff137ae24`
+        `https://api.openweathermap.org/data/2.5/forecast?lat=${state.lat}&lon=${state.lon}&appid=${process.env.REACT_APP_API_KEY}`
       )
       .then(({ data }) => setWeather(data));
   }, []);
-  console.log("weather", weather);
 
   return weather ? (
     <div className={`${s.item}`}>

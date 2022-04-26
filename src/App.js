@@ -6,7 +6,6 @@ import { ToastContainer } from "react-toastify";
 import Container from "./components/Container/Container";
 import AppBar from "./components/AppBar/AppBar";
 import Loader from "./components/Loader/Loader";
-
 const MainPage = lazy(() => import("./pages/MainPage.js"));
 const SearchPage = lazy(() => import("./pages/SearchPage.js"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage.js"));

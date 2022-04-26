@@ -17,7 +17,6 @@ export default function SearchBar() {
 
   const onHandleChange = (e) => {
     const city = e.target.value;
-    console.log("city", city);
     setCity(city.trim());
   };
   const onHandleKeyPress = (e) => {

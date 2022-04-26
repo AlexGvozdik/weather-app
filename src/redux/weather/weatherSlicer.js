@@ -9,7 +9,7 @@ export const fetchWeatherAction = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.get(
-        `/weather?q=${payload}&appid=d0aef4da9ac1a34e09e4ce9ff137ae24&units=imperial`
+        `/weather?q=${payload}&appid=${process.env.REACT_APP_API_KEY}&units=imperial`
       );
 
       return data;

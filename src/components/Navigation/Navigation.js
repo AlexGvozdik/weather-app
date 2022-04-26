@@ -4,7 +4,7 @@ import { isActive } from "../../utils/helpers";
 export default function Navigation() {
   return (
     <nav>
-      <NavLink exact to="/" className={isActive}>
+      <NavLink exact to="/weather-app" className={isActive}>
         Your Cities
       </NavLink>
 

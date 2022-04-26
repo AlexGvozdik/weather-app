@@ -19,7 +19,7 @@ function App() {
       <Container>
         <Suspense fallback={<Loader />}>
           <Routes>
-            <Route path="/" element={<MainPage />} />
+            <Route path="/weather-app" element={<MainPage />} />
             <Route path="/search" element={<SearchPage />} />
             <Route path="/details/:name" element={<DetailsPage />} />
             <Route path="*" element={<NotFoundPage />} />

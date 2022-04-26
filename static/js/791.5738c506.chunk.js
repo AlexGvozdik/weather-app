@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkweather_app=self.webpackChunkweather_app||[]).push([[791],{6791:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});t(2791);var u=t(184);function r(){return(0,u.jsx)("div",{children:"NotFoundPage"})}}}]);
-//# sourceMappingURL=791.5738c506.chunk.js.map

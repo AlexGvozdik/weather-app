@@ -44,7 +44,7 @@ export default function Details() {
           </li>
         ))}
       </ul>
-      <Link className={s.backDetails} to="/">
+      <Link className={s.backDetails} to="/weather-app">
         Back
       </Link>
     </div>
